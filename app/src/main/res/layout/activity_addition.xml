@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.carthy.maths.Addition"
+    android:background="@drawable/tableau">
+
+
+
+    <TextView
+        android:id="@+id/equation"
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Equation"
+        android:textColor="@color/WhiteCraie"
+        android:textSize="16dp"
+        android:layout_marginTop="235dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/equation"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/equation"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/answers1"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:textColor="@color/WhiteCraie"
+                android:background="@drawable/white_button"
+                android:onClick="answers1"/>
+
+            <Button
+                android:id="@+id/answers2"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/WhiteCraie"
+                android:background="@drawable/white_button"
+                android:onClick="answers2"/>
+
+            <Button
+                android:id="@+id/answers3"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/WhiteCraie"
+                android:background="@drawable/white_button"
+                android:onClick="answers3"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/exit"
+                android:text="exit"
+                android:textColor="@color/WhiteCraie"
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:background="@drawable/red_button"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="46dp"
+                android:onClick="exit"/>
+
+         </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
